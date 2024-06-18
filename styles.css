@@ -1,0 +1,135 @@
+/* Base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/* Navbar scrolled styles */
+.navbar.scrolled {
+    background-color: #5c6bc0; /* Dark purple */
+}
+
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 1em;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.navbar a {
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a.active,
+.navbar a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Hero section styles */
+.hero {
+    height: 100vh;
+    background: url('https://via.placeholder.com/1600x900') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero .button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.hero .welcome-text h1 {
+    font-size: 3em; /* Adjust the size as needed */
+    margin-bottom: 10px; /* Adjust spacing between the lines */
+}
+
+.hero .welcome-text h2 {
+    font-size: 1.5em; /* Adjust the size as needed */
+    margin-bottom: 20px; /* Adjust spacing between the lines */
+}
+	
+
+/* Section styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 60px; /* Offset for fixed navbar */
+}
+
+.menu-item {
+    margin: 20px 0;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .hero {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .menu-item {
+        margin: 10px 0;
+    }
+}
+
+/* Navbar scrolled styles */
+.navbar.scrolled {
+    background-color: #222;
+}
+#menu {
+    margin-bottom: 0; /* Remove bottom margin of the menu section */
+}
+
+#contact {
+    margin-top: 0; /* Remove top margin of the contact section */
+}
+
+.hero {
+    background-image: url('https://masterpiecer-images.s3.yandex.net/f4b5a4c9890e11eeacc5b646b2a0ffc1:upscaled');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
